@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube map</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.4/build/pannellum.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.4/build/pannellum.js"></script>
+    <style>
+        #panorama {
+            width: 2000px;
+            height: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="panorama"></div>
+    <script>
+        pannellum.viewer('panorama', {
+            "default": {
+                "firstScene": "001",
+                "author": "LUWI",
+                "sceneFadeDuration": 1000
+            },
+            "scenes": {
+                "001": {
+                    "title": "001",
+                    "type": "equirectangular",
+                    "panorama": "os-ix- Setup 001.jpg",
+                    "autoLoad": true,
+                    "compass": true,
+                    "pitch": 0,
+                    "yaw": 170,
+                    "hfov": 150,
+
+                    "hotSpots": [
+                        {
+                            "pitch": -0.1,
+                            "yaw": 98.739,
+                            "type": "info",
+                            "text": "Geotag_2",
+                            "URL": "./Assets/Asset-2.jpg"
+                        },
+                        {
+                            "pitch": -0.099,
+                            "yaw": 109.152,
+                            "type": "info",
+                            "text": "Geotag_3",
+                            "URL": "./Assets/Asset-3.jpg"
+                        },
+                        {
+                            "pitch": -0.9,
+                            "yaw": 169.073,
+                            "type": "scene",
+                            "text": "002",
+                            "sceneId": "002"
+                        }
+                    ]
+                },
+                "002": {
+                    "title": "002",
+                    "type": "equirectangular",
+                    "panorama": "os-ix- Setup 002.jpg",
+                    "autoLoad": true,
+                    "compass": true,
+                    "pitch": 0,
+                    "yaw": 260m ,
+                    "hfov": 100,
+
+                    "hotSpots": [
+                    {
+                            "pitch": -0.107,
+                            "yaw": 299.014,
+                            "type": "info",
+                            "text": "Geotag_2",
+                            "URL": "./Assets/Asset-2.jpg"
+                        },
+                        {
+                            "pitch": -0.106,
+                            "yaw": 304.374,
+                            "type": "info",
+                            "text": "Geotag_3",
+                            "URL": "./Assets/Asset-3.jpg"
+                        },
+                        {
+                            "pitch": -0.9,
+                            "yaw": 262.552,
+                            "type": "scene",
+                            "text": "001",
+                            "sceneId": "001"
+                        }
+                    ]
+                }
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>

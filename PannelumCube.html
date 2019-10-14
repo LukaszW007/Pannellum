@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube map</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.4/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.4/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 1200px;
+        height: 800px;
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "type": "cubemap",
+    "cubeMap": [
+        "./Img_0_4096.jpg",
+        "./Img_1_4096.jpg",
+        "./Img_2_4096.jpg",
+        "./Img_3_4096.jpg",
+        "./Img_4_4096.jpg",
+        "./Img_5_4096.jpg"
+    ],
+	"autoLoad": true
+});
+</script>
+
+</body>
+</html>

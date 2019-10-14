@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Registration>
+
+  <ScanWorld dir="os-ix- Setup 001" name="os-ix- Setup 001" rotation_angle="79.039" rotation_angle_unit="deg" rotation_axis="(-0.0008, -0.0009, 1.0000)" tran_unit="m" translation="(145.341, 82.802, 130.099)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 002" name="os-ix- Setup 002" rotation_angle="5.955" rotation_angle_unit="deg" rotation_axis="(-0.0021, -0.0102, -0.9999)" tran_unit="m" translation="(149.732, 82.913, 130.106)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 003" name="os-ix- Setup 003" rotation_angle="44.348" rotation_angle_unit="deg" rotation_axis="(0.0001, -0.0018, 1.0000)" tran_unit="m" translation="(150.450, 76.432, 130.097)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 004" name="os-ix- Setup 004" rotation_angle="-126.901" rotation_angle_unit="deg" rotation_axis="(-0.0005, -0.0005, 1.0000)" tran_unit="m" translation="(148.573, 76.447, 130.097)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 005" name="os-ix- Setup 005" rotation_angle="-145.653" rotation_angle_unit="deg" rotation_axis="(-0.0004, -0.0002, 1.0000)" tran_unit="m" translation="(143.977, 76.668, 130.091)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 006" name="os-ix- Setup 006" rotation_angle="176.119" rotation_angle_unit="deg" rotation_axis="(-0.0004, -0.0009, 1.0000)" tran_unit="m" translation="(139.764, 77.038, 130.092)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 007" name="os-ix- Setup 007" rotation_angle="178.472" rotation_angle_unit="deg" rotation_axis="(-0.0004, -0.0003, 1.0000)" tran_unit="m" translation="(138.893, 84.842, 130.107)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 008" name="os-ix- Setup 008" rotation_angle="43.868" rotation_angle_unit="deg" rotation_axis="(0.0023, 0.0024, -1.0000)" tran_unit="m" translation="(148.600, 82.600, 128.072)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 009" name="os-ix- Setup 009" rotation_angle="61.071" rotation_angle_unit="deg" rotation_axis="(0.0016, -0.0006, 1.0000)" tran_unit="m" translation="(148.570, 83.715, 128.074)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 010" name="os-ix- Setup 010" rotation_angle="14.663" rotation_angle_unit="deg" rotation_axis="(0.0061, 0.0010, 1.0000)" tran_unit="m" translation="(149.864, 83.872, 129.792)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 011" name="os-ix- Setup 011" rotation_angle="16.445" rotation_angle_unit="deg" rotation_axis="(-0.0013, 0.0183, 0.9998)" tran_unit="m" translation="(143.797, 82.405, 128.095)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 013" name="os-ix- Setup 013" rotation_angle="-168.529" rotation_angle_unit="deg" rotation_axis="(-0.0009, -0.0001, 1.0000)" tran_unit="m" translation="(139.590, 82.296, 128.054)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 014" name="os-ix- Setup 014" rotation_angle="41.064" rotation_angle_unit="deg" rotation_axis="(0.0002, -0.0005, -1.0000)" tran_unit="m" translation="(139.656, 79.218, 128.387)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 015" name="os-ix- Setup 015" rotation_angle="-162.588" rotation_angle_unit="deg" rotation_axis="(-0.0006, -0.0008, 1.0000)" tran_unit="m" translation="(142.851, 75.868, 128.057)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 018" name="os-ix- Setup 018" rotation_angle="-176.613" rotation_angle_unit="deg" rotation_axis="(0.0003, -0.0011, 1.0000)" tran_unit="m" translation="(150.400, 79.547, 128.399)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 020" name="os-ix- Setup 020" rotation_angle="54.643" rotation_angle_unit="deg" rotation_axis="(-0.0004, -0.0031, -1.0000)" tran_unit="m" translation="(148.511, 86.812, 129.494)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 021" name="os-ix- Setup 021" rotation_angle="109.487" rotation_angle_unit="deg" rotation_axis="(-0.0018, -0.0005, 1.0000)" tran_unit="m" translation="(140.594, 86.830, 129.465)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 016" name="os-ix- Setup 016" rotation_angle="10.622" rotation_angle_unit="deg" rotation_axis="(0.0132, -0.0002, 0.9999)" tran_unit="m" translation="(146.385, 76.480, 128.393)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 017" name="os-ix- Setup 017" rotation_angle="-124.671" rotation_angle_unit="deg" rotation_axis="(-0.0010, -0.0011, 1.0000)" tran_unit="m" translation="(150.582, 76.011, 128.148)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 022" name="os-ix- Setup 022" rotation_angle="-136.167" rotation_angle_unit="deg" rotation_axis="(-0.0010, 0.0021, 1.0000)" tran_unit="m" translation="(147.669, 84.886, 131.745)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 023" name="os-ix- Setup 023" rotation_angle="34.517" rotation_angle_unit="deg" rotation_axis="(-0.0008, -0.0016, 1.0000)" tran_unit="m" translation="(152.717, 87.420, 128.394)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 024" name="os-ix- Setup 024" rotation_angle="150.904" rotation_angle_unit="deg" rotation_axis="(-0.0004, -0.0001, 1.0000)" tran_unit="m" translation="(144.763, 87.846, 129.487)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 025" name="os-ix- Setup 025" rotation_angle="37.015" rotation_angle_unit="deg" rotation_axis="(-0.0003, -0.0001, 1.0000)" tran_unit="m" translation="(139.181, 87.169, 130.150)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 026" name="os-ix- Setup 026" rotation_angle="98.201" rotation_angle_unit="deg" rotation_axis="(-0.0003, -0.0002, 1.0000)" tran_unit="m" translation="(131.177, 86.980, 130.078)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 027" name="os-ix- Setup 027" rotation_angle="83.593" rotation_angle_unit="deg" rotation_axis="(0.0003, -0.0019, -1.0000)" tran_unit="m" translation="(138.162, 73.743, 130.115)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 028" name="os-ix- Setup 028" rotation_angle="29.664" rotation_angle_unit="deg" rotation_axis="(-0.0097, -0.0024, 1.0000)" tran_unit="m" translation="(146.624, 73.985, 130.118)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 029" name="os-ix- Setup 029" rotation_angle="-117.423" rotation_angle_unit="deg" rotation_axis="(-0.0004, 0.0021, 1.0000)" tran_unit="m" translation="(147.976, 75.451, 131.772)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 030" name="os-ix- Setup 030" rotation_angle="2.290" rotation_angle_unit="deg" rotation_axis="(-0.0919, -0.0535, -0.9943)" tran_unit="m" translation="(148.896, 74.040, 128.428)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 031" name="os-ix- Setup 031" rotation_angle="35.290" rotation_angle_unit="deg" rotation_axis="(-0.0064, -0.0017, 1.0000)" tran_unit="m" translation="(144.688, 73.907, 128.414)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 032" name="os-ix- Setup 032" rotation_angle="35.911" rotation_angle_unit="deg" rotation_axis="(-0.0022, -0.0050, -1.0000)" tran_unit="m" translation="(140.457, 73.714, 128.405)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 035" name="os-ix- Setup 035" rotation_angle="4.545" rotation_angle_unit="deg" rotation_axis="(0.0265, 0.0088, 0.9996)" tran_unit="m" translation="(130.916, 75.192, 128.067)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 036" name="os-ix- Setup 036" rotation_angle="59.255" rotation_angle_unit="deg" rotation_axis="(-0.0005, -0.0016, -1.0000)" tran_unit="m" translation="(126.356, 77.992, 128.387)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 037" name="os-ix- Setup 037" rotation_angle="27.225" rotation_angle_unit="deg" rotation_axis="(-0.0068, -0.0138, -0.9999)" tran_unit="m" translation="(128.662, 82.980, 128.047)"></ScanWorld>
+
+  <ScanWorld dir="os-ix- Setup 038" name="os-ix- Setup 038" rotation_angle="2.549" rotation_angle_unit="deg" rotation_axis="(-0.0786, -0.1158, -0.9902)" tran_unit="m" translation="(132.737, 84.844, 128.060)"></ScanWorld>
+
+</Registration>

@@ -1,0 +1,291 @@
+
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>Béke-barlang TLS panorámák</title>
+  <link type="text/css" rel="Stylesheet" href="css/pannellum.css" />
+  <style>
+   html, body {
+     width: 100%; height: 100%;
+     margin: 0; padding: 0;
+   }
+   body {
+     background: black;
+     color: white;
+   }
+   #bal {
+     position: absolute;
+     left:0; width: 50%; top: 40px; bottom: 0;
+   }
+   #terkep {
+     /*width: 100%; height: 100%;
+     margin: 5px;*/
+     position: absolute;
+     top: 5px;
+     bottom: 5px;
+     left: 5px; right: 5px;
+   }
+   #separator {
+     position: absolute;
+     left: 50%; top: 40px; bottom: 0; width: 1px;
+     background: #000;
+     border: solid 1px #fff;
+     cursor: ew-resize;
+     z-index: 20000;
+   }
+   #tobbi {
+     position: absolute; right: 0;
+     width: 50%; top: 40px; bottom: 0;
+   }
+   #helpbutt {
+     position: absolute; right: 10px; top:10px; width: auto;
+     font-weight: bold;
+   }
+   a {
+     color: yellow; text-decoration: none; 
+   }
+   a:hover {
+     color: red;
+   }
+   h1 {
+     margin:0; padding:0;
+     height: 30px;
+     text-align: center;
+   }
+   #pano {
+     margin:0; padding:0;
+     position: absolute;
+     top: 5px;
+     bottom: 5px;
+     left: 5px; right: 5px;
+   }
+   iframe {
+     width: 100%; height: 100%; border: none;
+   }
+   #crd {
+     position: absolute; right:10px; top:10px; width: auto; height:95px;
+     text-align: right;
+     font-family: arial sans-serif;
+     font-size: 9p;
+     background: rgba(255,255,255,.7); 
+     color:black; 
+     z-index:10000;
+     overflow: hidden;
+     visibility: hidden;
+   }
+   #crd td {
+     text-align: right;
+   }
+    .olImageLoadError {
+        display: none !important;
+    } 
+    .olControlAttribution, .olControlMousePosition {
+        background: rgba(0,0,0,.5);
+    }
+  </style>
+ </head>
+ <body>
+  <h1>Béke-barlang TLS panorámák</h1>
+  <div id="helpbutt"><a href="javascript:showHelp()">Súgó</a></div>
+  <div id="bal"><div id="terkep"></div></div>
+  <div id="separator"></div>
+  <div id="tobbi">
+   <div id="pano"></div>
+   <div id="crd"></div>
+  </div>
+  <script src="ol/OpenLayers.js"></script>
+  <script src="js/libpannellum.js"></script>
+  <script src="js/RequestAnimationFrame.js"></script>
+  <script src="js/pannellum.js"></script>
+  <script>
+  // debug
+    function dump(o){
+      var s="";
+      for(var i in o)
+        s+=i+": "+o[i]+'\n';
+      return s;
+    }
+  // debug
+  
+    function showHelp() {
+        window.open("help.html","_blank","width=650px,scrollbars=yes");
+    }
+    
+   OpenLayers.Renderer.symbol.arrow = [0,0, 2,0, 2,-10, 4,-10, 1,-15, -2,-10, 0,-10, 0,0];
+   var map=new OpenLayers.Map('terkep',
+     {
+       projection: "EPSG:23700", // EOV
+       maxExtent: new OpenLayers.Bounds(760552.76,347614.65-642*0.25718,760552.76+1362*0.25718,347614.65),
+       restrictedExtent: new OpenLayers.Bounds(760552.76,347614.65-642*0.25718,760552.76+1362*0.25718,347614.65)
+     });
+     
+    var szunyogh = new OpenLayers.Layer.XYZ(
+      "Szunyogh-féle felmérés", 
+      "../beke_szunyogh_eov_tiles/z${z}_${y}_${x}.png", 
+      {
+       resolutions: [0.08,0.04,0.02],
+       attribution: "Barlangtérkép: &copy; dr. Szunyogh Gábor",
+       maxExtent: new OpenLayers.Bounds(760540,347460,760880,347600),
+       tileOrigin: new OpenLayers.LonLat(760540,347460),
+       tileSize: new OpenLayers.Size(250,250)
+      }
+    );
+
+   var pflayer=new OpenLayers.Layer.Image(
+     "Pontfelhő felülnézet",
+     "pontfelho.jpg",
+     new OpenLayers.Bounds(760552.76,347614.65-642*0.25718,760552.76+1362*0.25718,347614.65),
+     new OpenLayers.Size(1362,642),
+     {
+       projection: "EPSG:23700",
+       numZoomLevels: 4,
+       maxResolution: .5
+     });
+   var sm = new OpenLayers.StyleMap({
+       'default': OpenLayers.Util.applyDefaults(
+           {strokeWidth:2,strokeColor:"blue",strokeOpacity:1,fillColor:"blue",pointRadius:4,cursor:"pointer",label:"${name}",labelAlign:"cb",labelYOffset:9},
+           OpenLayers.Feature.Vector.style.default
+       ),
+       'select': OpenLayers.Util.applyDefaults(
+           {strokeColor:"green",fillColor:"green",pointRadius:10,graphicName:"arrow",rotation: "${yaw}",labelYOffset:15},
+           OpenLayers.Feature.Vector.style.select
+       )
+   });
+   var stlayer=new OpenLayers.Layer.Vector(
+     "Műszerállások",
+     {
+       projection: "EPSG:23700",
+       styleMap: sm,
+       displayInLayerSwitcher: false
+     });
+   var sectionlayer=new OpenLayers.Layer.Vector(
+     "Metsző sík",
+     {
+       projection: "EPSG:23700",
+       style: {strokeColor:"red",strokeWidth:1},
+       displayInLayerSwitcher: false
+     });   
+   var ptlayer=new OpenLayers.Layer.Vector(
+     "Egérkurzor helye",
+     {
+       projection: "EPSG:23700",
+       style: {strokeColor:"green",fillColor:"yellow",graphicName:"circle",strokeOpacity:1,fillOpacity:1,pointRadius:3},
+       displayInLayerSwitcher: false
+     });   
+   map.addLayers([szunyogh,pflayer,sectionlayer,stlayer,ptlayer]);
+   map.addControl(new OpenLayers.Control.LayerSwitcher());
+   map.addControl(new OpenLayers.Control.MousePosition({numDigits:0,prefix:"EOV "}));
+   map.zoomToExtent(new OpenLayers.Bounds(760552.76,347614.65-642*0.25718,760552.76+1362*0.25718,347614.65));
+   var x=new XMLHttpRequest();
+   x.open("GET","stations.csv",false);
+   x.send();
+   var allasok=x.responseText.split("\n");
+   var f;
+   for(var i=0;i<allasok.length;i++)
+     if (allasok[i]!="")
+     {
+       var d=allasok[i].split(',');
+       var f=new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(d[0],d[1]),{ele:d[2],name:d[3].substring(8),yaw:45});
+       stlayer.addFeatures(f);
+     }
+   var sf=new OpenLayers.Control.SelectFeature(stlayer,
+     {
+       toggle: false,
+       onSelect: function(f)
+         {
+           //document.getElementById('pano').src="pannellum.htm?tour=tour.json&firstScene="+f.attributes.name;
+           panoView.setScene(f.attributes.name);
+         }
+     });
+   map.addControl(sf);
+   sf.activate();
+   
+    // panorámanéző
+    panoView=addPanorama("pano",
+    {
+      tour: "tour.json",
+      firstScene: "001",
+      pcSectionTool: true,
+      autoLoad: true,
+      compass: true,
+      onmousemove: function(e)
+        {
+          var crddiv=document.getElementById("crd");
+          if ((typeof e.pointCloud)!="undefined") {
+            crddiv.style.visibility="visible";
+            with (e.pointCloud)
+                crddiv.innerHTML="<table><tr><th>X:</th><td>"+x.toFixed(2)+"m</td></tr><tr><th>Y:</th><td>"+y.toFixed(2)+"m</td></tr><tr><th>Z:</th><td>"+z.toFixed(2)+"m</td></tr><tr><th>táv:</th><td>"+d.toFixed(2)+"m</td></tr></table>";
+            
+            ptlayer.removeAllFeatures();
+            ptlayer.addFeatures(new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(e.pointCloud.x,e.pointCloud.y)));
+
+          }
+          else
+          {
+            crddiv.style.visibility="hidden";
+            ptlayer.removeAllFeatures();
+          }
+        },
+      onviewchange: function(e)
+        {
+          for(var i in stlayer.features)
+            if (stlayer.features[i].renderIntent=="select"&&stlayer.features[i].attributes.name!=e.config.activeScene) 
+            {
+              stlayer.features[i].renderIntent="default";
+              stlayer.drawFeature(stlayer.features[i]);
+            }
+          // set rotation of active scene to e.yaw
+          var f=stlayer.getFeaturesByAttribute("name",e.config.activeScene)[0];
+          f.renderIntent="select";
+          f.attributes.yaw=e.yaw;
+          stlayer.drawFeature(f);
+          //console.log("sc="+e.config.activeScene+" att:"+dump(f.attributes));
+        },
+      onscenechange: function(e)
+        {
+          var st=stlayer.getFeaturesByAttribute('name',e.config.activeScene)[0];
+          map.setCenter([st.geometry.x,st.geometry.y]);
+          console.log("New scene: "+st.attributes.name);
+        },
+      onsectiondraw: function(e)
+        {
+          var st=stlayer.getFeaturesByAttribute('name',e.config.activeScene)[0];
+          var x1=st.geometry.x+e.minDst*Math.sin(e.config.yaw*Math.PI/180);
+          var y1=st.geometry.y+e.minDst*Math.cos(e.config.yaw*Math.PI/180);
+          var x2=st.geometry.x+e.maxDst*Math.sin(e.config.yaw*Math.PI/180);
+          var y2=st.geometry.y+e.maxDst*Math.cos(e.config.yaw*Math.PI/180);
+          sectionlayer.removeAllFeatures();
+          sectionlayer.addFeatures(new OpenLayers.Feature.Vector(new OpenLayers.Geometry.LineString([new OpenLayers.Geometry.Point(x1,y1),new OpenLayers.Geometry.Point(x2,y2)])));
+        },
+      onsectiondrawend: function(e)
+        {
+          sectionlayer.removeAllFeatures();
+        }
+    }); 
+    
+    var sep=document.getElementById('separator');
+    var moveSep=false;
+    function sepMove(e) {
+        var nx=e.pageX;
+        sep.style.left=nx+"px";
+        document.getElementById("bal").style.width=nx+"px";
+        document.getElementById("tobbi").style.width=document.body.clientWidth-nx+"px";
+    }
+    sep.addEventListener("mousedown",function(e) {
+        moveSep=true;
+        document.addEventListener("mousemove",sepMove);
+        map.events.on({"mousemove":sepMove});
+    });
+    document.addEventListener("mouseup",function(e) {
+        if (moveSep) {
+            moveSep=false;
+            document.removeEventListener("mousemove",sepMove);
+            map.events.un({"mousemove":sepMove});
+            window.dispatchEvent(new Event('resize'));
+        }
+    });
+
+  </script>
+ </body>
+</html>

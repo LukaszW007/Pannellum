@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<GeoTags>
+
+  <UCS>
+    <Rotation>
+      <UVW>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+      </UVW>
+      <Scale>1</Scale>
+    </Rotation>
+    <Translation>
+      <X>0</X>
+      <Y>0</Y>
+      <Z>0</Z>
+    </Translation>
+  </UCS>
+
+  <GeoTag>
+    <Name>Geotag 2</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-2.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>146.2517947</X>
+        <Y>85.35133313</Y>
+        <Z>129.9987562</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 3</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-3.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>146.8327833</X>
+        <Y>85.37831517</Y>
+        <Z>129.9995798</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 16</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-4.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>140.1229056</X>
+        <Y>84.67073826</Y>
+        <Z>129.7267591</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 17</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-5.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>141.1375094</X>
+        <Y>84.36111118</Y>
+        <Z>131.0632282</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 18</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-6.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>143.4413304</X>
+        <Y>85.9859486</Y>
+        <Z>130.2860784</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 19</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-7.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>143.4795345</X>
+        <Y>84.27187758</Y>
+        <Z>131.0744731</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 20</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-8.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>145.4238547</X>
+        <Y>84.51057358</Y>
+        <Z>131.0658737</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 21</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-9.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>145.3285132</X>
+        <Y>84.5536348</Y>
+        <Z>131.2459182</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 22</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-10.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>143.9571349</X>
+        <Y>80.1616169</Y>
+        <Z>131.0174927</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 4</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-11.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>148.8627461</X>
+        <Y>85.0647153</Y>
+        <Z>129.9822709</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 5</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-12.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>149.8568168</X>
+        <Y>85.62651578</Y>
+        <Z>130.5972873</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 6</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-13.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>147.9232347</X>
+        <Y>84.56182409</Y>
+        <Z>131.149764</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 7</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-14.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>151.0162272</X>
+        <Y>84.3395956</Y>
+        <Z>129.9327852</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 28</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-15.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>149.8337906</X>
+        <Y>76.51060764</Y>
+        <Z>131.1565348</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 8</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-16.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>151.2892537</X>
+        <Y>76.49417415</Y>
+        <Z>130.1922424</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 9</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-17.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>151.3167897</X>
+        <Y>77.57735103</Y>
+        <Z>129.5620485</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 27</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-18.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>150.7652735</X>
+        <Y>79.54360866</Y>
+        <Z>131.0761541</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 11</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link></Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>143.2968516</X>
+        <Y>75.27439779</Y>
+        <Z>129.999795</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 23</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-19.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>143.9566366</X>
+        <Y>76.23913907</Y>
+        <Z>131.021238</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 24</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-20.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>143.6514981</X>
+        <Y>79.27484475</Y>
+        <Z>131.0643734</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 25</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-21.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>145.5182896</X>
+        <Y>78.1874688</Y>
+        <Z>131.2283408</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 26</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-22.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>148.4514572</X>
+        <Y>76.53394666</Y>
+        <Z>131.0682974</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 12</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-23.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>138.9221496</X>
+        <Y>76.21362037</Y>
+        <Z>131.0639092</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 13</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-24.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>138.4702072</X>
+        <Y>76.02679196</Y>
+        <Z>130.165053</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 14</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-25.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>138.8128332</X>
+        <Y>79.09320354</Y>
+        <Z>131.0335286</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 15</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-26.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>138.6374884</X>
+        <Y>84.15974058</Y>
+        <Z>131.0772152</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 10</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-27.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>148.3922355</X>
+        <Y>79.48565723</Y>
+        <Z>131.0538766</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+  <GeoTag>
+    <Name>Geotag 1</Name>
+    <Category></Category>
+    <Label></Label>
+    <Link>..\SharedData\Asset-1.jpg</Link>
+    <Volume>
+      <Type>Sphere</Type>
+      <Center>
+        <X>144.3236483</X>
+        <Y>85.76263422</Y>
+        <Z>129.929109</Z>
+      </Center>
+      <Diameter>0.2</Diameter>
+    </Volume>
+  </GeoTag>
+
+</GeoTags>
